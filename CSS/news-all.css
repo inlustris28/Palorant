@@ -169,3 +169,13 @@
     transform: scale(1.15);
 }
 
+@media (max-width: 480px){
+    .news-all-title{
+        padding: 0;
+        background-position: 52% center;
+    }
+
+    .news-all-title-text{
+        font-size: 32px;
+    }
+}
