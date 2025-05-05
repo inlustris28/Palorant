@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'firstFont';
-    src: url(../Assets/font/game-battles.ttf);
+    src: url(../Assets/FONT/game-battles.ttf);
 }
 
 @font-face {
     font-family: 'secondFont';
-    src: url(../Assets/font/MavenPro-Bold.ttf);
+    src: url(../Assets/FONT/MavenPro-Bold.ttf);
 }
 
 @font-face {
     font-family: 'thirdFont';
-    src: url(../Assets/font/MavenPro-Black.ttf);
+    src: url(../Assets/FONT/MavenPro-Black.ttf);
 }
 
 *{
