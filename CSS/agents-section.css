@@ -1,0 +1,411 @@
+@import url(style.css);
+
+.agents{
+    width: auto;
+    height: auto;
+    background: linear-gradient(rgb(242, 99, 22, 0.57),  #D9D9D9);
+}
+
+.agents-section{
+    width: 100%;
+    height: auto;
+    padding-top: 65px;
+    padding-bottom: 15px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.agents-title{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    background-image: url(../Assets/IMAGE/AGENTS/top-background.png);
+    background-size: cover;
+    background-position: 52% center;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    padding-left: 30px;
+}
+
+.agents-title-text{
+    width: 100%;
+    font-size: 45px;
+    font-family: 'firstFont';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: inherit;
+    text-decoration: none;
+    color: white;
+}
+
+.agents-part{
+    width: 100%;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.agents-part-top{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.agents-container{
+    width: 900px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    text-decoration: none;
+}
+
+.agents-container::before{
+    content: '';
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #001E8B;
+    opacity: 0.8;
+    filter: blur(50px);
+    clip-path: polygon(0 0, 30% 3%, 30% 35%, 35% 50%, 98.2% 47%, 88.5% 99.5%, 11.5% 99.5%, 3% 85%);
+}
+
+.agents-shadow {
+    height: 97%;
+    width: 97.5%;
+    background-color: #001E8B;
+    clip-path: polygon(0 0, 30% 0, 30% 30%, 35% 45%, 100% 45%, 90% 100%, 9% 100%, 0% 85%);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.agents-container-image{
+    height: 100%;
+    width: 30%;
+    background-color: #000825;
+    display: flex;
+    justify-content: center;
+}
+
+.agents-image{
+    height: 100%;
+    width: auto;
+}
+
+.agents-container-name{
+    height: 70%;
+    width: 5%;
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D9D9D9;
+}
+
+.agents-name{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    text-decoration: none;
+    font-family: 'thirdFont';
+    color: #f29316;
+    font-size: 32px;
+}
+
+.agents-container-right{
+    height: 55%;
+    width: 65%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.agents-container-right-top{
+    height: 80%;
+    width: 100%;
+    padding-top: 20px;
+    padding-right: 100px;
+    padding-left: 20px;
+    background-color: #D9D9D9;
+}
+
+.agents-story{
+    font-size: 18px;
+    font-family: 'secondFont';
+    color: black;
+    text-align: left;
+}
+
+.agents-container-right-bottom{
+    height: 20%;
+    width: 100%;
+    padding-right: 65px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #D9D9D9;
+}
+
+.role{
+    height: 100%;
+    width: auto;
+    padding: 0 40px;
+    gap: 10px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+    background-color: #f29316;
+}
+
+.role-img{
+    height: 80%;
+    width: auto;
+    filter: invert();
+}
+
+.role-text{
+    font-family: 'thirdFont';
+    font-size: 22px;
+}
+
+.agents-part-bottom{
+    height: auto;
+    width: 100%;
+    row-gap: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.agents-container-skill{
+    width: 550px;
+    height: 150px;
+    /* background-color: #000825;
+    clip-path: polygon(70% 0, 100% 0, 100% 100%, 0 100%, 0 17%, 58% 17%); */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 1;
+}
+
+.agents-container-skill-title{
+    width: auto;
+    height: 17%;
+    padding-right: 30px;
+    padding-left: 40px;
+    z-index: -1;
+    position: relative;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    box-shadow: 5px 5px 3px #001e8bb3;
+}
+
+.agents-container-skill-title::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    position: absolute;
+    background-color: #f29316;
+    clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.skill-title-text{
+    font-family: 'thirdFont';
+    font-size: 17px;
+    line-height: 100%;
+    color: white;
+}
+
+.agents-container-skill-info{
+    height: 85%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: #000825;
+    box-shadow: 5px 5px 3px rgba(0, 30, 139, 0.7);
+}
+
+.agents-container-skill-left{
+    width: 100px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-image{
+    width: 100%;
+    height: auto;
+}
+
+.agents-container-skill-right{
+    width: 70%;
+}
+
+.skill-desc{
+    font-family: 'secondFont';
+    font-size: 15px;
+    color: white;
+}
+
+@media (max-width: 975px){
+    .agents-container{
+        height: 245px;
+        width: 630px;
+    }
+
+    .agents-container-right-top{
+        padding-right: 10%;
+    }
+
+    .agents-container-right-bottom{
+        padding-right: 40px;
+    }
+
+    .agents-name{
+        font-size: 24px;
+    }
+
+    .agents-story{
+        font-size: 14px;
+    }
+
+    .role-text{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px){
+    .agents-container{
+        height: auto;
+        width: 80%;
+        max-width: 400px;
+    }
+
+    .agents-container::before{
+        content: '';
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: #001E8B;
+        opacity: 0.8;
+        filter: blur(50px);
+        clip-path: polygon(0% 0%, 80% 3%, 100% 13%, 100% 100%, 25% 100%, 5% 90%);
+    }
+
+    .agents-shadow{
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        clip-path: polygon(0% 0%, 78% 0%, 98% 10%, 98% 98.5%, 20% 98.5%, 0% 88%);
+    }
+
+    .agents-container-image{
+        width: 100%;
+        height: 40%;
+    }
+
+    .agents-container-name{
+        height: auto;
+        width: 100%;
+        padding: 5px 0;
+    }
+
+    .agents-name{
+        writing-mode: horizontal-tb;
+        text-orientation: upright;
+        padding: 0;
+    }
+
+    .agents-story{
+        text-align: center;
+        padding: 0;
+    }
+
+    .agents-container-right{
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .agents-container-right-top{
+        padding: 10px 20px;
+    }
+
+    .agents-container-right-bottom{
+        height: auto;
+        padding: 0;
+    }
+
+    .role{
+        height: auto;
+        width: auto;
+        padding-bottom: 10px;
+    }
+
+    .role-img{
+        height: 80%;
+        max-height: 20px;
+    }
+
+    .role-text{
+        font-size: 20px;
+        padding: 5px 0;
+    }
+
+    .agents-part-bottom{
+        row-gap: 20px;
+    }
+
+    .agents-container-skill{
+        padding: 0 20px;
+    }
+
+}
+
+@media (max-width: 480px){
+    .agents-title{
+        padding: 0;
+        background-position: 52% center;
+    }
+
+    .agents-title-text{
+        font-size: 32px;
+    }
+
+    .agents-container-skill-info{
+        padding: 0 20px;
+    }
+
+    .skill-desc{
+        font-size: 10px;
+    }
+}
+

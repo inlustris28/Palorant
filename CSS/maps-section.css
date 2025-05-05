@@ -1,0 +1,221 @@
+@import url(style.css);
+
+.maps-section{
+    width: 100%;
+    height: auto;
+    padding-top: 65px;
+    padding-bottom: 15px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgba(255, 255, 255, 0.79), rgba(247, 174, 79, 0.438));
+}
+
+.maps-title{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    background-image: url(../../Assets/IMAGE/MAPS/top-background-1.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    padding-left: 30px;
+}
+
+.maps-title-text{
+    width: 100%;
+    font-size: 45px;
+    font-family: 'firstFont';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: inherit;
+    text-decoration: none;
+    color: white;
+}
+
+.maps-part{
+    width: 100%;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.maps-part-top{
+    width: 100%;
+    height: 350px;
+    display: flex;
+}
+
+.maps-part-top-left{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-right: 20px;
+    padding-left: 70px;
+}
+
+.main-thumb{
+    width: 100%;
+    height: auto;
+}
+
+.maps-part-top-right{
+    width: 50%;
+    height: 100%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.maps-part-top-right-container{
+    width: 100%;
+    height: 150px;
+    background-color: #001E8B;
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+    display: flex;
+    align-items: center;
+    padding: 5px 20px 5px 97px;
+}
+
+.maps-container-image{
+    width: auto;
+    height: 90%;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 15px;
+    scrollbar-color: #ffffff transparent;
+}
+
+#maps-image{
+    height: 100%;
+    width: auto;
+}
+
+.thumb{
+    transition: transform 0.3s ease;
+
+}
+.thumb:hover{
+    transform: scale(1.1);
+}
+
+.maps-part-bottom{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    padding-left: 65px;
+}
+
+.maps-description-container{
+    height: 100%;
+    width: 70%;
+    background-color: #001E8B;
+    display: flex;
+    align-items: center;
+    clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);
+    padding-right: 15px;
+}
+
+.maps-description{
+    font-family: 'secondFont';
+    text-align: left;
+    font-size: 20px;
+    padding-left: 15px;
+    color: white;
+    padding-right: 50px;
+}
+
+@media (max-width: 768px){
+    .maps-part{
+        height: auto;
+    }
+
+    .maps-part-top{
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .maps-part-top-left{
+        height: auto;
+        width: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .main-thumb{
+        height: auto;
+        width: 80%;
+    }
+
+    .maps-part-top-right{
+        width: 100%;
+        height: auto;
+        padding: 20px 50px;
+    }
+
+    .maps-part-top-right-container{
+        width: 100%;
+        clip-path: none;
+        padding: 5px 10px;
+    }
+
+    .maps-part-bottom{
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 480px){
+    .maps-part-top-left{
+        padding: 0 20px;
+    }
+
+    .maps-part-top-right{
+        padding: 20px;
+    }
+
+    .main-thumb{
+        width: 100%;
+    }
+
+    .maps-description-container{
+        height: auto;
+        width: 80%;
+    }
+
+    .maps-description{
+        padding-right: 5%;
+        font-size: 16px;
+    }
+
+    .maps-container-image{
+        height: auto;
+    }
+
+    .maps-part-top-right-container{
+        height: 100px;
+        position: relative;
+    }
+
+    .thumb{
+        height: 90px;
+        width: auto;
+    }
+}

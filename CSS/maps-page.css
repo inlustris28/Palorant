@@ -1,0 +1,142 @@
+@import url(style.css);
+
+.maps-section{
+    background-image: url(../Assets/IMAGE/MAPS/background.png);
+    background-repeat: no-repeat;
+    background-size: 190%;
+    background-position: center center;
+    width: 100%;
+    height: auto;
+    padding-top: 65px;
+    padding-bottom: 15px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.maps-title{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    background-image: url(../Assets/IMAGE/MAPS/top-background.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    padding-left: 30px;
+}
+
+.maps-title-text{
+    width: 100%;
+    font-size: 45px;
+    font-family: 'firstFont';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: inherit;
+    text-decoration: none;
+    color: #000825;
+}
+
+.maps-part{
+    padding-top: 30px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.maps-container{
+    height: 400px;
+    width: 300px;
+    z-index: 1;
+    font-family: 'secondFont';
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: transform 0.3s ease;
+    color: inherit;
+    text-decoration: none;
+}
+
+.maps-container:hover{
+    transform: scale(1.05);
+}
+
+.maps-container::before{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #000825;
+    filter: blur(50px);
+    clip-path: polygon(100% 2%, 100% 85.5%, 80.5% 98.5%, 20% 98.5%, 18% 61%, 2% 52%, 0 0);
+}
+
+.maps-shadow {
+    height: 97%;
+    width: 97.5%;
+    gap: 10px;
+    background-color: #001E8B;
+    clip-path: polygon(100% 0, 100% 87.5%, 81% 100%, 18% 100%, 18% 60%, 0 50%, 0 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.maps-container-top{
+    height: 60%;
+    width: 100%;
+}
+
+.maps-container-title{
+    height: 54px;
+    font-size: 30px;
+    line-height: 100%;
+    padding: 12px 10px 8px 10px;
+    text-align: center;
+    color: #D9D9D9;
+    font-family: 'thirdFont';
+}
+
+.maps-container-imageMaps{
+    height: 180px;
+    width: 100%;
+    clip-path: polygon(100% 0, 100% 97%, 19% 97%, 0 75%, 0 0);
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.maps-container-image{
+    height: 93%;
+    width: 96%;
+    clip-path: polygon(100% 0, 100% 97%, 18% 97%, 0 75%, 0 0);
+    object-fit: cover;
+}
+
+.maps-container-description{
+    padding-left: 70px;
+    padding-right: 13px;
+    font-size: 14px;
+    font-family: 'secondFont';
+    color: #D9D9D9;
+}
+
+@media (max-width: 480px){
+    .maps-title{
+        padding: 0;
+        background-position: 52% center;
+    }
+
+    .maps-title-text{
+        font-size: 32px;
+    }
+}
