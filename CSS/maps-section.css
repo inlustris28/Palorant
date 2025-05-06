@@ -165,6 +165,14 @@
         width: 80%;
     }
 
+    .maps-description-container{
+        width: 90%;
+    }
+
+    .maps-description{
+        font-size: 16px;
+    }
+
     .maps-part-top-right{
         width: 100%;
         height: auto;
@@ -183,6 +191,15 @@
 }
 
 @media (max-width: 480px){
+    .maps-title{
+        padding: 5px 0;
+        background-position: 52% center;
+    }
+
+    .maps-title-text{
+        font-size: 28px;
+    }
+
     .maps-part-top-left{
         padding: 0 20px;
     }
@@ -195,14 +212,18 @@
         width: 100%;
     }
 
+    .maps-part-bottom{
+        width: 100%;
+    }
+
     .maps-description-container{
         height: auto;
-        width: 80%;
+        width: 90%;
     }
 
     .maps-description{
         padding-right: 5%;
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .maps-container-image{
