@@ -85,7 +85,8 @@
     align-items: center;
     padding-left: 50px;
     justify-content: flex-start;
-    overflow: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 
 .news-divider-title-right{
@@ -131,7 +132,8 @@
     align-items: center;
     padding-right: 50px;
     justify-content: left;
-    overflow: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 
 .news-divider-title-left{

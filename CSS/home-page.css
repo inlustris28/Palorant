@@ -522,7 +522,7 @@
 
 .maps-left{
     height: 100%;
-    width: 60%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -546,9 +546,11 @@
 .maps-card {
     height: 30%;
     width: 60%;
+    min-width: 370px;
     clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     position: relative;
     background-size: cover;
 }
@@ -584,7 +586,7 @@
     color: white;
     opacity: 0;
     font-family: 'secondFont';
-    padding-right: 20px;
+    padding-right: 10px;
     text-align: right;
     transition: opacity 0.2s ease;
     font-family: 'thirdFont';
@@ -592,7 +594,7 @@
 
 .maps-card:hover::after {
     clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 3% 100%);
-    width: 80%;
+    width: 90%;
     opacity: 50%;
 }
 
@@ -602,7 +604,7 @@
 
 .maps-right{
     height:80%;
-    width: 40%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -621,28 +623,27 @@
 
 .maps-title{
     font-family: 'firstFont';
-    font-size: 55px;
+    font-size: clamp(12px, 5vw, 50px);
     color: #000825;
     text-shadow: 5px 5px 2px #001e8bd9;
-    padding-right: 70px;
-    padding: 30px 70px 10px 0;
+    padding: 30px 10% 10px 0;
 }
 
 .maps-subtitle-1{
-    font-size: 23px;
+    font-size: clamp(12px, 2.3vw, 23px);
     font-family: 'thirdFont';
     text-align: left;
     padding-right: 30%;
 }
 
 .maps-subtitle-2{
-    font-size: 23px;
+    font-size: clamp(12px, 2.3vw, 23px);
     font-family: 'thirdFont';
     padding-right: 10%;
 }
 
 .maps-description{
-    width: 450px;
+    width: 80%;
     padding-top: 10px;
     padding-right: 10%;
     font-family: 'secondFont';
@@ -654,14 +655,15 @@
     height: 30%;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     padding-top: 50px;
 }
 
 .maps-all{
-    height: 45px;
-    width: 350px;
+    height: auto;
+    width: auto;
     font-size: 20px;
-    padding: 7px 30px 7px 100px;
+    padding: 15px 30px 15px 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -670,7 +672,7 @@
     color: white;
     text-align: center;
     background-color: #001E8B;
-    clip-path: polygon(30% 0, 100% 0%, 100% 100%, 20% 100%);
+    clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
     transition: color 0.3s ease, background-color 0.3s ease;
 }
 
@@ -713,7 +715,7 @@
 
     /* INTRODUCTION */
     .introduction-section{
-        height: 600px;
+        height: 800px;
         align-items: center;
     }
 
@@ -856,10 +858,14 @@
         width: 100%;
     }
 
+    .agents-title{
+        font-size: clamp(12px, 6.5vw, 50px);
+    }
+
     .agents-right{
         height: 50%;
         width: 30%;
-        top: 0;
+        top: 20px;
         right: 0;
         position: absolute;
         background-size: cover;
@@ -867,7 +873,10 @@
     }
 
     .agents-image{
-        height: 370px;
+        height: auto;
+        width: 200%;
+        min-height: 260px;
+        min-width: 147px;
     }
 
     .agents-left-top{
@@ -876,13 +885,90 @@
     }
 
     .agents-slogan-1, .agents-slogan-2{
-        margin-left: 15%;
+        margin-left: 12%;
+        width: 75%;
+        font-size: 20px;
+    }
+
+    .agents-description{
+        margin-left: 12%;
+        width: 75%;
+        font-size: 16px;
     }
 
     .best-agents{
         max-width: 200px;
-        font-size: 18px;
+        font-size: clamp(12px, 2.5vw, 18px);
         padding: 7px 25px;
+    }
+
+    #agents-pice{
+        transform: translateX(-40px) translateY(10px) rotate(-7deg);
+    }
+
+
+
+
+    /* MAPS */
+
+    .maps-card{
+        height: 100px;
+        width: 90%;
+        min-width: 200px;
+    }
+
+    .maps-left{
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .maps-right-top{
+        align-items: center;
+    }
+
+    .maps-description{
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .maps-title{
+        padding: 0;
+        font-size: clamp(12px, 6vw, 50px);
+        padding-top: 40px;
+    }
+
+    .maps-subtitle-1{
+        width: 100%;
+        padding-top: 10px;
+        padding-left: 30px;
+        padding-right: 0;
+    }
+
+    .maps-subtitle-2{
+        width: 100%;
+        padding-top: 10px;
+        text-align: right;
+        padding-right: 30px;
+    }
+
+    .maps-description{
+        font-size: 16px;
+        padding-top: 10px;
+        padding-left: 30px;
+        text-align: center;
+    }
+
+    .maps-all{
+        font-size: 16px;
+    }
+
+    .maps-card-name{
+        font-size: 32px;
+    }
+
+    .maps-card-arrow{
+        padding-right: 25px;
+        font-size: 16px;
     }
 }
 
@@ -890,23 +976,23 @@
     .hero-title{
         font-size: 25px;
     }
-
+    
     .hero-right{
         display: flex;
         align-items: flex-start;
     }
-
+    
     .hero-description{
         font-size: 10px;
     }
-
+    
     .download-button{
         font-size: 10px;
         padding: 15px 20px;
     }
-
-
-
+    
+    
+    
     /* INTRODUCTION */
     .introduction-title{
         font-size: clamp(20px, 6.5vw, 60px);
@@ -920,12 +1006,89 @@
     .introduction-description{
         font-size: 12px;
     }
-
+    
     .introduction-button{
         width: 85%;
     }
-
+    
     .introduction-clip{
         width: 85%;
+    }
+
+
+
+
+    /* AGENTS */
+    .agents-ornament{
+        height: 150px;
+    }
+
+    .agents-image{
+        height: auto;
+        width: 250%;
+        min-height: 200px;
+        min-width: 100px;
+    }
+
+    #agents-pice{
+        transform: translateX(-40px) translateY(10px) rotate(-7deg);
+    }
+
+    .agents-left-top{
+        height: 60%;
+        width: 100%;
+    }
+    
+    .agents-title{
+        font-size: clamp(12px, 8vw, 50px);
+    }
+
+    .agents-left-center{
+        height: 200px;
+    }
+
+    .agents-description{
+        width: 45%;
+    }
+
+    .agents-right{
+        top: 170px;
+        height: 35%;
+        width: 40%;
+    }
+
+
+
+    /* MAPS */
+
+    .maps-card-name{
+        font-size: 24px;
+    }
+
+    .maps-card-arrow{
+        padding-right: 20px;
+        font-size: 12px;
+    }
+
+    .maps-title{
+        padding-top: 80px;
+    }
+
+    .maps-all{
+        font-size: 14px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 30px;
+    }
+
+    .maps-card{
+        min-width: 150px;
+        height: 80px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .maps-description{
+        font-size: 14px;
     }
 }

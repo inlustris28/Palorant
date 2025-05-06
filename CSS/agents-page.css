@@ -9,7 +9,7 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    background-image: url(../Assets/IMAGE/AGENTS/background.png);
+    background: linear-gradient(#001e8bd1, #f293169f);
     background-repeat: no-repeat;
     background-size: 190%;
     background-position: center center;
