@@ -1,7 +1,7 @@
 @import url(style.css);
 
 .maps-section{
-    background-image: url(../Assets/IMAGE/MAPS/background.png);
+    background: linear-gradient(rgba(3, 32, 86, 0.851), rgba(255, 152, 48, 0.829));
     background-repeat: repeat;
     background-size: 190%;
     background-position: center center;
